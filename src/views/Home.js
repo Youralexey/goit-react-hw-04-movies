@@ -4,7 +4,7 @@ import PageHeading from "../components/PageHeading/PageHeadind.jsx";
 import MovieList from "../components/MoviesList/MovieList";
 
 const Home = () => {
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState(null);
 
   useEffect(() => {
     api.featchPopularMovies().then((data) => setMovies(data));
