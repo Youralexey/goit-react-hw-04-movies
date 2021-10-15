@@ -42,7 +42,7 @@ const MovieInfo = () => {
   }, [movieId]);
 
   const handleGoBack = () => {
-    history.push(location.state.from.location ?? "/movies");
+    history.push(location.state.from.location ?? "/");
   };
 
   return (
